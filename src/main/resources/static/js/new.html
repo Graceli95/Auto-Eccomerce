@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <button id="lightmode" class="fa-solid fa-sun"></button>
+    <button id="darkmode" class="fa-solid fa-moon"></button>
+
+    <p>lorem50</p>
+    <p>lorem50</p>
+    <p>lorem50</p>
+    <p>lorem50</p>
+    <p>lorem50</p>
+  </body>
+
+  <script>
+    const body = document.querySelector("body");
+    const darkmode = document.querySelector("#darkmode");
+    const lightmode = document.querySelector("#lightmode");
+    function setDarkMode() {
+      body.style.backgroundColor = "black";
+      body.style.color = "white";
+    }
+
+    function setLightMode() {
+      body.style.backgroundColor = "white";
+      body.style.color = "black";
+    }
+
+    darkmode.addEventListener("click", setDarkMode);
+    lightmode.addEventListener("click", setLightMode);
+  </script>
+</html>
